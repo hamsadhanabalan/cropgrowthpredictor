@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Growth Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Growth Predictor</h1>
+        <form id="crop-form">
+            <div class="input-group">
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" required>
+            </div>
+            <div class="input-group">
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" id="humidity" required>
+            </div>
+            <div class="input-group">
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" id="rainfall" required>
+            </div>
+            <button type="submit">Predict Growth</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
